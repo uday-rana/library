@@ -290,7 +290,7 @@ namespace sdds
 		strcpy(m_filename, filename);
 		m_typeMenu.setTitle("Choose the type of publication:");
 		m_typeMenu << "Book" << "Publication";
-		m_mainMenu.setTitle("Seneca Library Application");
+		m_mainMenu.setTitle("Library Application");
 		m_mainMenu << "Add New Publication" << "Remove Publication" << "Checkout publication from library" << "Return publication to library";
 		m_exitMenu.setTitle("Changes have been made to the data, what would you like to do?");
 		m_exitMenu << "Save changes and exit" << "Cancel and go back to the main menu";
@@ -367,7 +367,7 @@ namespace sdds
 		}
 		while(quit == false);
 		cout << endl << "-------------------------------------------" << endl;
-		cout << "Thanks for using Seneca Library Application" << endl;
+		cout << "Thanks for using the Library Application" << endl;
 		ifstream infile(m_filename);
 		cout << infile.rdbuf();
 	}
